@@ -1,0 +1,61 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  background: red;
+	animation-name: box-load;
+	animation-duration: 5s;
+	animation-iteration-count: 2;
+	position: relative;
+	animation: cubic-bezier(0.82,-0.08, 0.17, 1);
+}
+
+@keyframes box-load{
+
+0%{
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+25%{
+	position: relative;
+	left: 50%;
+	top: 0;
+	background: aqua;
+	transform: rotate(360deg);
+}
+
+50%{
+	position: relative;
+	top: 500px;
+	left: 50%;
+	background: green;
+}
+
+75%{
+	position: relative;
+	left: 0;
+	top: 500px;
+	background: gold;
+}
+
+
+100%{
+	position: relative;
+	left: 0;
+	top: 0px;
+	background: red;
+}
+
+
+
+
+
+
+}
